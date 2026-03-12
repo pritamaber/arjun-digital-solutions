@@ -55,14 +55,14 @@ export default function Navbar() {
 
             <div className="text-sm">
               <div className="text-gray-500">Call to Our Experts</div>
-              <div className="font-semibold text-gray-800">+91 9051855666</div>
+              <div className="font-semibold text-gray-800">+91 8617753202</div>
             </div>
           </div>
         </div>
 
         {/* MOBILE MENU BUTTON */}
         <div
-          className="lg:hidden cursor-pointer text-gray-800"
+          className="lg:hidden cursor-pointer bg-gray-100 p-3 rounded-lg text-[#1E6FAF]"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <FaBars size={24} />

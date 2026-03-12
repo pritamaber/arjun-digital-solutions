@@ -55,3 +55,19 @@ body {
 .animate-shine {
   animation: shine 2.5s infinite;
 }
+
+/* ---------------- CLIENT LIST SLIDER ANIMATION ---------------- */
+
+@keyframes clientScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-client-scroll {
+  animation: clientScroll 25s linear infinite;
+}
