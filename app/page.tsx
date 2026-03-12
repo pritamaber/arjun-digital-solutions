@@ -3,38 +3,46 @@ import ClientSlider from "../components/ClientSlider";
 import ServiceGrid from "../components/ServiceGrid";
 import ServicesSection from "@/components/ServicesSection";
 import WhyUs from "../components/WhyUs";
-// import About from "@/components/About";
 import CTA from "../components/CTA";
 import SectionDivider from "../components/SectionDivider";
+import FadeIn from "../components/FadeIn";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <FadeIn>
+        <Hero />
+      </FadeIn>
 
       <SectionDivider />
 
-      <ClientSlider />
+      <FadeIn>
+        <ClientSlider />
+      </FadeIn>
 
       <SectionDivider />
 
-      <ServiceGrid />
+      <FadeIn>
+        <ServiceGrid />
+      </FadeIn>
 
       <SectionDivider />
 
-      <ServicesSection />
+      <FadeIn>
+        <ServicesSection />
+      </FadeIn>
 
       <SectionDivider />
 
-      <WhyUs />
+      <FadeIn>
+        <WhyUs />
+      </FadeIn>
 
       <SectionDivider />
 
-      {/* <About /> */}
-
-      <SectionDivider />
-
-      <CTA />
+      <FadeIn>
+        <CTA />
+      </FadeIn>
 
       <SectionDivider />
     </main>

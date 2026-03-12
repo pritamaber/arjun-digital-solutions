@@ -71,3 +71,38 @@ body {
 .animate-client-scroll {
   animation: clientScroll 25s linear infinite;
 }
+
+
+
+/* ---------------- LOGO SPIN ANIMATION ---------------- */
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 2s linear infinite;
+}
+
+/* ---------------- LOADING BAR ANIMATION ---------------- */
+
+@keyframes loadingBar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loading-bar {
+  animation: loadingBar 1.2s ease-in-out infinite;
+}

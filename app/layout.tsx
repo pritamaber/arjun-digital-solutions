@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PageTransition from "@/components/PageTransition";
 
 // universal components
 import TopBar from "../components/TopBar";
@@ -32,17 +33,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* GLOBAL HEADER */}
-
         <TopBar />
-
         <Navbar />
 
-        {/* PAGE CONTENT */}
+        <PageTransition>
+          <main>{children}</main>
+        </PageTransition>
 
-        <main>{children}</main>
-
-        {/* GLOBAL FOOTER */}
         <Footer />
       </body>
     </html>
