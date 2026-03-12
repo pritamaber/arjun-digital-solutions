@@ -3,6 +3,7 @@ import ClientSlider from "../components/ClientSlider";
 import ServiceGrid from "../components/ServiceGrid";
 import ServicesSection from "@/components/ServicesSection";
 import WhyUs from "../components/WhyUs";
+// import About from "@/components/About";
 import CTA from "../components/CTA";
 import SectionDivider from "../components/SectionDivider";
 
@@ -26,6 +27,10 @@ export default function Home() {
       <SectionDivider />
 
       <WhyUs />
+
+      <SectionDivider />
+
+      {/* <About /> */}
 
       <SectionDivider />
 

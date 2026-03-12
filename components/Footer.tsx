@@ -7,6 +7,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -154,6 +155,36 @@ export default function Footer() {
 
       <div className="border-t border-white/10 text-center text-sm text-gray-400 py-6">
         © Arjun Digital Solutions. All rights reserved.
+      </div>
+      <div className="border-t border-white/10 text-center text-sm text-gray-400 py-6 space-x-3">
+        <span>Designed and developed by Pritam Das</span>
+
+        <Link
+          href="https://impritam.com"
+          className="text-blue-400 hover:text-blue-300 transition"
+          target="_blank"
+        >
+          impritam.com
+        </Link>
+
+        <span>|</span>
+
+        <Link
+          href="mailto:pritam.aber@gmail.com"
+          className="text-blue-400 hover:text-blue-300 transition"
+        >
+          pritam.aber@gmail.com
+        </Link>
+
+        <span>|</span>
+
+        <Link
+          href="https://wa.me/916291616198"
+          className="text-green-400 hover:text-green-300 transition"
+          target="_blank"
+        >
+          WhatsApp
+        </Link>
       </div>
     </footer>
   );
