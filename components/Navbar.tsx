@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaPhoneAlt, FaBars } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
+import ShinyButton from "./ShinyButton";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,11 +44,7 @@ export default function Navbar() {
         {/* RIGHT SIDE */}
         <div className="hidden lg:flex items-center gap-6">
           {/* SHINY BUTTON */}
-          <button className="relative overflow-hidden bg-[#1E6FAF] text-white px-6 py-2 rounded-full font-medium">
-            <span className="relative z-10">Get Quote</span>
-
-            <span className="absolute top-0 left-[-75%] w-[50%] h-full bg-white/30 rotate-12 animate-shine"></span>
-          </button>
+          <ShinyButton>Get Quote</ShinyButton>
 
           {/* PHONE */}
           <div className="flex items-center gap-3">

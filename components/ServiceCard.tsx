@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ShinyButton from "./ShinyButton";
 
 type Service = {
   title: string;
@@ -9,19 +10,29 @@ type Service = {
 
 export default function ServiceCard({ service }: { service: Service }) {
   return (
-    <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-      <img src={service.image} className="h-16 mb-4" />
+    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-8 flex flex-col items-center text-center border border-gray-100 hover:-translate-y-1">
+      {/* IMAGE */}
 
-      <h3 className="text-xl font-semibold">{service.title}</h3>
+      <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-blue-50 mb-6 group-hover:scale-110 transition">
+        <img src={service.image} className="h-10 object-contain" />
+      </div>
 
-      <p className="text-red-500 font-semibold mt-2">{service.price}</p>
+      {/* TITLE */}
 
-      {/* <p className="text-gray-500 text-sm mt-3">{service.description}</p> */}
+      <h3 className="text-lg font-semibold text-gray-900 leading-snug">
+        {service.title}
+      </h3>
 
-      <Link href={`/services/${service.slug}`}>
-        <button className="mt-6 bg-[var(--primary)] text-white px-5 py-2 rounded-full">
-          Book Now
-        </button>
+      {/* PRICE */}
+
+      <p className="text-[var(--accent-orange)] font-semibold mt-3 text-sm">
+        {service.price}
+      </p>
+
+      {/* BUTTON */}
+
+      <Link href={`/services/${service.slug}`} className="mt-6">
+        <ShinyButton>Book Now</ShinyButton>
       </Link>
     </div>
   );
