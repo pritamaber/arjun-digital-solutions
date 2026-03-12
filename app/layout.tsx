@@ -43,6 +43,7 @@ export default function RootLayout({
         <main>{children}</main>
 
         {/* GLOBAL FOOTER */}
+        <Footer />
       </body>
     </html>
   );

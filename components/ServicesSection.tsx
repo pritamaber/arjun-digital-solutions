@@ -2,13 +2,13 @@ import ServiceCategory from "./ServiceCategory";
 
 export default function ServicesSection() {
   return (
-    <section className="bg-white py-36">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="bg-white py-4">
+      <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">
           We Provide Best Services
         </h2>
 
-        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-24 leading-relaxed">
+        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-4 leading-relaxed">
           We provide the best services tailored to meet your business needs. Our
           expert team ensures seamless e-filing, accurate reporting, and
           reliable support for your continued success.

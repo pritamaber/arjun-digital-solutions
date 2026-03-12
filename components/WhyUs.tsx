@@ -1,6 +1,6 @@
 export default function WhyUs() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-4">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-black">
           Why Choose Arjun Digital Solutions

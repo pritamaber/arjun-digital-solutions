@@ -1,25 +1,32 @@
 export default function CTA() {
   return (
-    <section className="py-20">
-      <div className="max-w-4xl mx-auto bg-[#1E6FAF] text-white p-10 rounded-xl text-center">
-        <h2 className="text-3xl font-bold">Need Help With Registration?</h2>
+    <section className="py-24 bg-gray-50">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-12 text-center border border-blue-50">
+        <h2 className="text-3xl font-bold text-gray-900">
+          Need Help With Registration?
+        </h2>
 
-        <p className="mt-4">
-          Speak with our expert and get your process started today.
+        <p className="mt-4 text-gray-600 max-w-xl mx-auto">
+          Speak with our expert and get your registration or compliance process
+          started quickly and smoothly.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
+        {/* FORM */}
+
+        <div className="grid md:grid-cols-3 gap-5 mt-10">
           <input
-            placeholder="Name"
-            className="px-4 py-3 rounded-lg text-black"
+            type="text"
+            placeholder="Your Name"
+            className="w-full px-5 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)] outline-none"
           />
 
           <input
-            placeholder="Phone"
-            className="px-4 py-3 rounded-lg text-black"
+            type="text"
+            placeholder="Phone Number"
+            className="w-full px-5 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-[var(--primary)] outline-none"
           />
 
-          <button className="bg-[#FF6A00] px-6 py-3 rounded-lg font-semibold">
+          <button className="bg-[#FF6A00] hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition">
             Request Call
           </button>
         </div>
