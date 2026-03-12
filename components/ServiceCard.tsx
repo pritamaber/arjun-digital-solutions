@@ -5,7 +5,6 @@ type Service = {
   price: string;
   slug: string;
   image: string;
-  description: String;
 };
 
 export default function ServiceCard({ service }: { service: Service }) {
