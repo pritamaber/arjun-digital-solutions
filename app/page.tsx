@@ -1,8 +1,8 @@
-import TopBar from "../components/TopBar";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ClientSlider from "../components/ClientSlider";
-import Services from "../components/Services";
+import ServiceGrid from "../components/ServiceGrid";
+// import Services from "../components/Services";
+import ServicesSection from "@/components/ServicesSection";
 import WhyUs from "../components/WhyUs";
 import CTA from "../components/CTA";
 import Footer from "../components/Footer";
@@ -10,15 +10,14 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <main>
-      <TopBar />
-
-      <Navbar />
-
       <Hero />
 
       <ClientSlider />
 
-      <Services />
+      <ServiceGrid />
+
+      {/* <Services /> */}
+      <ServicesSection />
 
       <WhyUs />
 

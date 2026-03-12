@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FaPhoneAlt, FaBars } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,9 +13,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* LOGO */}
         <div className="flex items-center gap-2">
-          <img src="/images/ads-logo.png" className="h-10" />
+          <Link href="/">
+            <img src="/images/ads-logo.png" className="h-10 cursor-pointer" />
+          </Link>
         </div>
-
         {/* DESKTOP MENU */}
         <nav className="hidden lg:flex items-center gap-8 text-gray-700 font-medium">
           <div className="flex items-center gap-1 cursor-pointer hover:text-[#1E6FAF]">
