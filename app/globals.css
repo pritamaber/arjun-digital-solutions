@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+   --primary: #1E6FAF;
+  --accent-orange: #FF6A00;
+  --accent-green: #10B981;
+  --accent-pink: #F43F5E;
 }
 
 @theme inline {
