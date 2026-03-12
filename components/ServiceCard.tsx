@@ -5,6 +5,7 @@ type Service = {
   price: string;
   slug: string;
   image: string;
+  description: String;
 };
 
 export default function ServiceCard({ service }: { service: Service }) {
@@ -16,9 +17,7 @@ export default function ServiceCard({ service }: { service: Service }) {
 
       <p className="text-red-500 font-semibold mt-2">{service.price}</p>
 
-      <p className="text-gray-500 text-sm mt-3">
-        A secure digital signature used for online filings.
-      </p>
+      {/* <p className="text-gray-500 text-sm mt-3">{service.description}</p> */}
 
       <Link href={`/services/${service.slug}`}>
         <button className="mt-6 bg-[var(--primary)] text-white px-5 py-2 rounded-full">

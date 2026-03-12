@@ -3,7 +3,7 @@ export default function CTA() {
     <section className="py-24 bg-gray-50">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-12 text-center border border-blue-50">
         <h2 className="text-3xl font-bold text-gray-900">
-          Need Help With Registration?
+          Need Help With Something?
         </h2>
 
         <p className="mt-4 text-gray-600 max-w-xl mx-auto">

@@ -1,8 +1,8 @@
-import { services } from "../data/services";
+import { serviceCategories } from "../data/services";
 import ServiceCard from "./ServiceCard";
 
 export default function ServiceGrid() {
-  const serviceEntries = Object.entries(services);
+  const services = serviceCategories.flatMap((category) => category.services);
 
   return (
     <section className="bg-gray-50 py-20">
@@ -21,14 +21,14 @@ export default function ServiceGrid() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mt-12">
-          {serviceEntries.map(([slug, service]) => (
+          {services.map((service) => (
             <ServiceCard
-              key={slug}
+              key={service.slug}
               service={{
                 title: service.title,
                 price: service.price,
-                slug: slug,
-                image: "/images/ads-logo.png",
+                slug: service.slug,
+                image: service.image || "/images/ads-logo.png",
               }}
             />
           ))}
